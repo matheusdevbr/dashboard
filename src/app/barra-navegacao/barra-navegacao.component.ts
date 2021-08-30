@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-barra-navegacao',
@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BarraNavegacaoComponent implements OnInit {
 
+  @Output() onToggle: any = new EventEmitter();
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  disparaEvento(){
+    this.onToggle.emit();
+  }
 }

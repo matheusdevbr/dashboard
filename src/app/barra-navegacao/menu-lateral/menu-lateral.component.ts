@@ -9,7 +9,11 @@ export class MenuLateralComponent implements OnInit {
 
   constructor() { }
 
+  public menuAberto: boolean = false;
   ngOnInit(): void {
   }
 
+  toggle() {
+    this.menuAberto = !this.menuAberto;
+  }
 }
