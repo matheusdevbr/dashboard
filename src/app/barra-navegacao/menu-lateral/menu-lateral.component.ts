@@ -10,6 +10,7 @@ export class MenuLateralComponent implements OnInit {
   constructor() { }
 
   public menuAberto: boolean = false;
+  
   ngOnInit(): void {
   }
 
